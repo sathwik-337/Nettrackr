@@ -8,9 +8,9 @@ instance/
 .env
 *.env
 
-# Firebase key
-serviceAccountKey.json
-serviceAccountKey
+# # Firebase key
+# serviceAccountKey.json
+# serviceAccountKey
 
 # Vercel
 .vercel/
@@ -23,3 +23,6 @@ vercel
 # Node.js
 node_modules/
 build/
+
+
+backend/serviceAccountKey.json
