@@ -1,0 +1,25 @@
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+
+# Flask environment
+instance/
+.env
+*.env
+
+# Firebase key
+serviceAccountKey.json
+serviceAccountKey
+
+# Vercel
+.vercel/
+vercel
+
+# Logs
+*.log
+
+
+# Node.js
+node_modules/
+build/
