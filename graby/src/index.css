@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* .dark body {
+  @apply bg-gray-900 text-gray-100;
+} */
+/* 
+body {
+  @apply bg-white text-gray-900;
+} */
+html {
+  scroll-behavior: smooth;
+  font-family: Raleway;
+}
+.card {
+  max-width: 360px;
+  margin: auto;
+  border-radius: 0.75rem;
+  background-color: #f9fafb;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.image {
+  width: 100%;
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  background-color: #f3f4f6;
+}
+
+.content {
+  padding: 1rem;
+}
+
+.title {
+  color: #111827;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.desc {
+  color: #4b5563;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  max-height: 3.6em;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.desc.expanded {
+  max-height: 1000px;
+}
+
+.action {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #2563eb;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0;
+}
+
+.action:hover {
+  color: #1d4ed8;
+}
+
+.action span {
+  transition: transform 0.3s ease;
+}
+
+.action:hover span {
+  transform: translateX(4px);
+}
+
+@media (max-width: 480px) {
+  .card {
+    max-width: 100%;
+  }
+  .image {
+    height: 150px;
+  }
+}
